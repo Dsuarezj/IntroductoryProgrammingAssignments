@@ -17,38 +17,35 @@ public class Diamond {
 
         int numberofAsterisk= userInput.nextInt();
 
-        for (int i = 0; i < numberofAsterisk; i++) {
-
-
-            if(i<numberofAsterisk/2)
+        for (int i = 1; i <= numberofAsterisk; i++)
+        {
+            for (int j = 0; j < (numberofAsterisk - i); j++)
+                System.out.print(" ");
+            for (int j = 1; j <= i; j++)
             {
-                for(int k=1;k<numberofAsterisk/2-i;k++)
-                {
-                    System.out.print(" ");
-                }
-                for(int j=0;j<=i;j++)
-                {
-                    System.out.print(asterisk);
-                    System.out.print(" ");
-                }
-                System.out.println();
-
+                System.out.print(asterisk);
+                System.out.print(" ");
             }
-            if(i>numberofAsterisk/2 )
-            {
-                for(int k=0;k<i-(numberofAsterisk/2);k++)
-                {
-                    System.out.print(" ");
-                }
-                for(int j=0;j<=numberofAsterisk-i-1;j++)
-                {
-                    System.out.print(asterisk);
-                    System.out.print(" ");
-                }
-                System.out.println();
 
-            }
+            System.out.println();
+
+
         }
+
+        for (int i = numberofAsterisk - 1; i >= 1; i--)
+        {
+            for (int j = 0; j < (numberofAsterisk - i); j++)
+                System.out.print(" ");
+            for (int j = 1; j <= i; j++)
+            {
+                System.out.print(asterisk);
+                System.out.print(" ");
+            }
+
+            System.out.println();
+        }
+
+        System.out.println();
 
     }
 }
