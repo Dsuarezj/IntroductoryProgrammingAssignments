@@ -5,6 +5,12 @@ public class FizzBuzzExercise {
 
     public static void main(String[] args) {
 
+        FizzBuzz();
+
+    }
+
+    static void FizzBuzz(){
+
         int fizzNumber=3;
         int buzzNumber =5;
 
@@ -19,13 +25,7 @@ public class FizzBuzzExercise {
             else
                 System.out.println(numberGame);
 
-
-
         }
-
-
-
-
 
     }
 
