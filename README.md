@@ -170,5 +170,5 @@ Code: `src/PrimeFactorsExercise.java`
 
 ## Special Thanks
 
-Thanks to Pamela and Sofia for their help, time and valuable feedback. 
+Thanks to **Pamela** and **Sofia** for their help, time and valuable feedback. 
 
