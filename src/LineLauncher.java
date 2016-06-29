@@ -6,14 +6,15 @@ public class LineLauncher {
     }
 
 
-    public static void doExercise() {
+    private static void doExercise() {
 
         Line line = new Line();
         UserInput userExercise =new UserInput();
         int numberOfAsterisks = 0;
         String direction = "";
+        String [] exerciseName = new String[]{"(1) Easiest exercise ever", "(2) Vertical Line", "(3) Horizontal Line"};
 
-        switch (userExercise.selectExercise(new String[]{"(1) Easiest exercise ever", "(2) Vertical Line", "(3) Horizontal Line"})) {
+        switch (userExercise.selectExercise(exerciseName)) {
             case 1:
                 direction = "horizontal";
                 numberOfAsterisks = 1;
