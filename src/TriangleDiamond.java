@@ -18,7 +18,7 @@ public class TriangleDiamond {
                 System.out.print(" ");
             }
             Line line = new Line();
-            line.drawLine(i + 1, "space", "*");
+            line.drawLine(i + 1, "space");
             System.out.println("");
         }
 

@@ -9,11 +9,11 @@ public class LineLauncher {
     public static void doExercise() {
 
         Line line = new Line();
-
+        UserInput userExercise =new UserInput();
         int numberOfAsterisks = 0;
         String direction = "";
 
-        switch (selectLineExercise()) {
+        switch (userExercise.selectExercise(new String[]{"(1) Easiest exercise ever", "(2) Vertical Line", "(3) Horizontal Line"})) {
             case 1:
                 direction = "horizontal";
                 numberOfAsterisks = 1;
@@ -28,22 +28,10 @@ public class LineLauncher {
                 break;
         }
 
-        line.drawLine(numberOfAsterisks, direction,"*");
+        line.drawLine(numberOfAsterisks, direction);
 
     }
 
-    public static int selectLineExercise() {
-
-        UserInput exercise = new UserInput();
-
-        System.out.println("Select the exercise: ");
-        System.out.println("(1) Easiest exercise ever");
-        System.out.println("(2) Vertical Line");
-        System.out.println("(3) Horizontal Line");
-
-        int numberOfExercise = exercise.getInput();
-        return numberOfExercise;
-    }
 
     public static int getNumberOfAsterisks() {
 
