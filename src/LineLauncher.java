@@ -1,17 +1,13 @@
 
 public class LineLauncher {
 
-
     public static void main(String[] args) {
-        DoExercise();
+        doExercise();
     }
 
-
-    public static void DoExercise() {
+    public static int selectExercise() {
 
         UserInput exercise = new UserInput();
-        UserInput userAsterisk = new UserInput();
-        Line line = new Line ();
 
         System.out.println("Select the exercise: ");
         System.out.println("(1) Easiest exercise ever");
@@ -19,39 +15,42 @@ public class LineLauncher {
         System.out.println("(3) Horizontal Line");
 
         int numberOfExercise = exercise.getInput();
-        int numberOfAsterisk = 0;
-        String direction ="";
+        return numberOfExercise;
+    }
 
-        switch (numberOfExercise) {
+    public static int getNumberOfAsterisks() {
+
+        UserInput userAsterisk = new UserInput();
+        System.out.println("Number of Lines");
+        int numberOfAsterisk = userAsterisk.getInput();
+        System.out.println();
+        return numberOfAsterisk;
+    }
+
+    public static void doExercise() {
+
+        Line line = new Line();
+
+        int numberOfAsterisks = 0;
+        String direction = "";
+
+        switch (selectExercise()) {
             case 1:
                 direction = "horizontal";
-                numberOfAsterisk =1;
+                numberOfAsterisks = 1;
                 break;
             case 2:
                 direction = "vertical";
-                numberOfAsterisk= getNumberOfAsterisk();
+                numberOfAsterisks = getNumberOfAsterisks();
                 break;
             case 3:
                 direction = "horizontal";
-                numberOfAsterisk= getNumberOfAsterisk();
+                numberOfAsterisks = getNumberOfAsterisks();
                 break;
         }
 
-        line.drawLine(numberOfAsterisk,direction);
+        line.drawLine(numberOfAsterisks, direction);
 
     }
-
-    public static int getNumberOfAsterisk(){
-
-        UserInput userAsterisk = new UserInput();
-        int numberOfAsterisk = 0;
-        System.out.println("Number of Lines");
-        System.out.println();
-        numberOfAsterisk=userAsterisk.getInput();
-        return numberOfAsterisk;
-
-
-    }
-
 
 }
