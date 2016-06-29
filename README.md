@@ -20,6 +20,8 @@ These exercises were performed using **Java JDK 1.7.0_80** in **IntelliJ IDEA 20
 
 In total, there are 9 exercises where basic programming functions of Java is reviewed.
 
+For the Triangle and Diamond Exercise you will have a launcher.
+
 ###Triangle Exercises
 
 **1. Easiest exercise ever:**
@@ -31,22 +33,11 @@ Example:
 * 
 ```
 
-Code: `src/EasiestExerciseEver.java`
+Code: `src/LineLauncher.java`  
 
-**2. Draw a horizontal line:**
-Given a number n, print n asterisks on one line.
+Option 1
 
-Example: 
-when n=8:  
-
-``` 
-******** 
-```
-
-Code: `src/DrawAHorizontalLine.java`
-
-
-**3. Draw a vertical line:**
+**2. Draw a vertical line:**
 Given a number n, print n lines, each with one asterisks
 
 
@@ -59,7 +50,24 @@ when n=3:
 *
 ```
 
-Code: `src/DrawAVerticalLine.java`
+Code: `src/LineLauncher.java`  
+
+Option 2
+
+**3. Draw a horizontal line:**
+Given a number n, print n asterisks on one line.
+
+Example: 
+when n=8:  
+
+``` 
+******** 
+```
+
+Code: `src/LineLauncher.java`  
+
+Option 3
+
 
 **4. Draw a right triangle:**
 Given a number n, print n lines, each with one more asterisk than the last (i.e. one on the first line, two on the second,etc.) 
@@ -73,7 +81,9 @@ when n=3:
 ***
 ```
 
-Code: `src/DrawARightTriangle.java`
+Code: `src/TriangleDiamondLauncher.java`  
+
+Option 1
 
 ###Diamond Exercises
 
@@ -90,6 +100,11 @@ for n=3:
 ```
 Code: `src/DrawAIsoscelesTriangle.java`
 
+Code: `src/TriangleDiamondLauncher.java`  
+
+Option 2
+
+
 **6. Diamond:**
 Given a number n, print a centered diamond. 
 
@@ -104,7 +119,10 @@ for n=3:
   *
 ```
 
-Code: `src/Diamond.java`
+Code: `src/TriangleDiamondLauncher.java`  
+
+Option 3
+
 
 **7. Diamond with Name:**
 Given a number n, print a centered diamond with your name in place of the middle line. 
@@ -120,7 +138,9 @@ Bill
   *
 ```
 
-Code: `src/DiamondWithName.java`
+Code: `src/TriangleDiamondLauncher.java`  
+
+Option 4
 
 ###FizzBuzz Exercise
 
@@ -170,5 +190,5 @@ Code: `src/PrimeFactorsExercise.java`
 
 ## Special Thanks
 
-Thanks to **Pamela** and **Sofia** for their help, time and valuable feedback. 
+Thanks to Pamela and Sofia for their help, time and valuable feedback. 
 
