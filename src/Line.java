@@ -12,6 +12,7 @@ public class Line {
                 System.out.println();
             if (direction == "space")
                 System.out.print(" ");
+
         }
     }
 }

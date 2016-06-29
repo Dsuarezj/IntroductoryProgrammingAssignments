@@ -16,7 +16,7 @@ public class LineLauncher {
 
         switch (userExercise.selectExercise(exerciseName)) {
             case 1:
-                direction = "horizontal";
+                direction = "";
                 numberOfAsterisks = 1;
                 break;
             case 2:

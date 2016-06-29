@@ -14,7 +14,7 @@ public class TriangleDiamondLauncher {
 
 
         int numberOfAsterisks;
-        String [] exerciseName = new String[]{"(1) Draw a right triangle", "(2) Isosceles Triangle", "(3) Diamond", "(4) Diamond with Name"};
+        String [] exerciseName = new String[]{"(1) Draw a right triangle", "(2) Draw isosceles triangle", "(3) Draw diamond", "(4) Draw diamond with Name"};
 
 
         switch (userExercise.selectExercise(exerciseName)) {
