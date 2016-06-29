@@ -13,7 +13,7 @@ public class LineLauncher {
         int numberOfAsterisks = 0;
         String direction = "";
 
-        switch (selectExercise()) {
+        switch (selectLineExercise()) {
             case 1:
                 direction = "horizontal";
                 numberOfAsterisks = 1;
@@ -28,11 +28,11 @@ public class LineLauncher {
                 break;
         }
 
-        line.drawLine(numberOfAsterisks, direction);
+        line.drawLine(numberOfAsterisks, direction,"*");
 
     }
 
-    public static int selectExercise() {
+    public static int selectLineExercise() {
 
         UserInput exercise = new UserInput();
 
