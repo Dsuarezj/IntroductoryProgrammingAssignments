@@ -1,6 +1,3 @@
-/**
- * Methods used for Triangle Exercises
- */
 public class Line {
 
     public void drawLine(int numberOfAsterisk, String direction) {

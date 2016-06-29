@@ -1,4 +1,3 @@
-
 public class TriangleDiamondLauncher {
     public static void main(String[] args) {
         doExercise();
@@ -11,31 +10,30 @@ public class TriangleDiamondLauncher {
         TriangleDiamond triangle = new TriangleDiamond();
         TriangleDiamond diamond = new TriangleDiamond();
 
-
-
-        int numberOfAsterisks;
-        String [] exerciseName = new String[]{"(1) Draw a right triangle", "(2) Draw isosceles triangle", "(3) Draw diamond", "(4) Draw diamond with Name"};
+        int numberOfLines;
+        String[] exerciseName = new String[]{"(1) Draw a right triangle", "(2) Draw isosceles triangle", "(3) Draw diamond", "(4) Draw diamond with Name"};
 
 
         switch (userExercise.selectExercise(exerciseName)) {
             case 1:
-                numberOfAsterisks = getNumberOfAsterisks();
-                triangle.drawRightTriangle(numberOfAsterisks);
+                numberOfLines = getNumberOfAsterisks();
+                triangle.drawRightTriangle(numberOfLines);
                 break;
             case 2:
-                numberOfAsterisks = getNumberOfAsterisks();
-                triangle.drawIsoscelesTriangle(numberOfAsterisks);
+                numberOfLines = getNumberOfAsterisks();
+                triangle.drawIsoscelesTriangle(numberOfLines);
                 break;
             case 3:
-                numberOfAsterisks = getNumberOfAsterisks();
+                numberOfLines = getNumberOfAsterisks();
+                diamond.drawDiamond(numberOfLines);
                 break;
             case 4:
-                numberOfAsterisks = getNumberOfAsterisks();
+                numberOfLines = getNumberOfAsterisks();
+                diamond.drawDiamondWithName(numberOfLines);
                 break;
 
         }
     }
-
 
     public static int getNumberOfAsterisks() {
 

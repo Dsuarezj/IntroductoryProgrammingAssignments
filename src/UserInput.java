@@ -17,7 +17,6 @@ public class UserInput {
             System.out.println(exerciseName[i]);
         }
 
-        int numberOfExercise = exercise.getInput();
-        return numberOfExercise;
+        return exercise.getInput();
     }
 }

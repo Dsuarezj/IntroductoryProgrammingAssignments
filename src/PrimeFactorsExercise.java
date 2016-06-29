@@ -1,33 +1,23 @@
-/**
- * Created by dsuarez on 6/27/16.
- */
-import java.util.Scanner;
-
 public class PrimeFactorsExercise {
 
     public static void main(String[] args) {
+        UserInput userNumber = new UserInput();
 
-        Scanner userInput = new Scanner(System.in);
-        System.out.println("Ingresa un número:");
-        int userNumber= userInput.nextInt();
+        System.out.println("Enter yor number you want to calculate its prime factor");
 
-        generate(userNumber);
-        
+        generatePrimeFactors(userNumber.getInput());
     }
 
-    static void generate(int number){
-        System.out.println("Los factores de " + number + " son (es):");
-        int primeFactors = 0;
+    static void generatePrimeFactors(int number) {
 
-        for (int i = 2; i<=(number); i++) {
+        for (int i = 2; i <= (number); i++) {
             while (number % i == 0) {
                 number /= i;
-                if (primeFactors !=i ){
-                    primeFactors = i;
-                    System.out.println(primeFactors);
-                }
+                System.out.println(i);
             }
         }
     }
 
+
 }
+
